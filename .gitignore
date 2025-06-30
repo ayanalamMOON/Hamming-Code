@@ -1,0 +1,367 @@
+# .gitignore for Advanced Error Correction Codes Library
+# This file excludes build artifacts, temporary files, and other non-essential files
+
+# ===========================
+# Build Directories and Artifacts
+# ===========================
+
+# Build directories
+build/
+build-*/
+Build/
+BUILD/
+cmake-build-*/
+out/
+
+# Output directories with compiled binaries and object files
+output/
+bin/
+dist/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+CPackConfig.cmake
+CPackSourceConfig.cmake
+
+# Ninja build files
+build.ninja
+.ninja_deps
+.ninja_log
+
+# ===========================
+# Compiled Object Files and Executables
+# ===========================
+
+# Object files
+*.o
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Executables
+*.exe
+*.out
+*.app
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Static libraries
+*.a
+*.lib
+
+# Shared libraries
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# ===========================
+# Compiler and Tool Generated Files
+# ===========================
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+
+# Executables
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# ===========================
+# IDE and Editor Files
+# ===========================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+*.vcxproj.filters
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Code::Blocks
+*.depend
+*.layout
+*.cbp
+
+# Dev-C++
+*.dev
+
+# Eclipse CDT
+.metadata
+.project
+.cproject
+.settings/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+*.moc.cpp
+*.qm
+*.prl
+
+# ===========================
+# Operating System Files
+# ===========================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================
+# Package Managers and Dependencies
+# ===========================
+
+# Conan
+conandata.txt
+conanfile.txt
+conanbuildinfo.*
+conan.lock
+
+# vcpkg
+vcpkg_installed/
+.vcpkg-root
+
+# Hunter
+_deps/
+
+# ===========================
+# Testing and Coverage
+# ===========================
+
+# Test results
+*.xml
+*.log
+
+# Coverage reports
+*.gcno
+*.gcda
+*.gcov
+coverage/
+coverage.info
+lcov.info
+
+# Google Test
+gtest/
+googletest/
+
+# ===========================
+# Documentation Generated Files
+# ===========================
+
+# Doxygen
+html/
+latex/
+Doxyfile.bak
+
+# Sphinx
+_build/
+_static/
+_templates/
+
+# ===========================
+# Profiling and Performance
+# ===========================
+
+# Profiling data
+*.prof
+gmon.out
+perf.data*
+*.cachegrind
+*.callgrind
+
+# Intel VTune
+*.amplxe
+
+# ===========================
+# Temporary and Backup Files
+# ===========================
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Auto-generated files
+*_autogen.*
+*_generated.*
+
+# ===========================
+# Version Control
+# ===========================
+
+# Git
+.git/
+.gitattributes
+
+# Mercurial
+.hg/
+.hgignore
+
+# SVN
+.svn/
+
+# ===========================
+# Archives and Compressed Files
+# ===========================
+
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.rar
+*.7z
+
+# ===========================
+# Logs and Runtime Files
+# ===========================
+
+# Log files
+*.log
+logs/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ===========================
+# Project Specific
+# ===========================
+
+# Benchmark results
+benchmarks/results/
+*.csv
+*.dat
+
+# Generated test data
+test_data/
+test_results/
+
+# Performance analysis outputs
+*.txt
+analysis_results/
+
+# Custom build scripts output
+scripts/output/
+
+# ===========================
+# Keep Important Files
+# ===========================
+
+# Force include important configuration files
+!CMakeLists.txt
+!Makefile
+!.clang-format
+!.clang-tidy
+!conanfile.py
+!vcpkg.json
+
+# Keep documentation
+!README.md
+!LICENSE
+!docs/
+!docs/**
+
+# Keep source code
+!src/
+!src/**
+!include/
+!include/**
+!test/
+!test/**
+!tests/
+!tests/**
+!examples/
+!examples/**
+!benchmarks/
+!benchmarks/**
+
+# Keep project configuration
+!.github/
+!.github/**
